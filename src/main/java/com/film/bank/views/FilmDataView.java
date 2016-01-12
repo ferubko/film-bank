@@ -5,6 +5,7 @@ import com.film.bank.server.ServiceMediator;
 import com.vaadin.data.util.BeanItemContainer;
 import com.vaadin.ui.CustomComponent;
 import com.vaadin.ui.Table;
+import com.vaadin.ui.VerticalLayout;
 
 /**
  * Created by Stepan on 1/10/2016.
@@ -21,14 +22,16 @@ public class FilmDataView extends CustomComponent {
         initData();
         Table table = new Table(null, itemDS);
         table.setImmediate(true);
-        table.setSizeFull();
         table.setSelectable(true);
 
         table.setVisibleColumns(new String[]{"firstName", "secondName"});
         table.setColumnHeaders(new String[]{"Name", "Second name"});
         table.setWidth(700, Unit.PIXELS);
         table.setHeight(300, Unit.PIXELS);
-        setCompositionRoot(table);
+        VerticalLayout content = new VerticalLayout();
+        content.setSizeFull();
+        content.addComponent(table);
+        setCompositionRoot(content);
     }
 
     private void initData() {
