@@ -104,7 +104,6 @@
                 <version>${vaadin.version}</version>
                 <executions>
                     <execution>
-                        <phase>compile</phase>
                         <goals>
                             <goal>clean</goal>
                             <goal>resources</goal>
