@@ -1,6 +1,6 @@
-package com.film.bank;
+package com.film.ui;
 
-import com.film.bank.service.FilmDataService;
+import com.film.data.service.FilmDataService;
 import com.vaadin.server.VaadinServlet;
 
 import javax.ejb.EJB;
@@ -11,13 +11,14 @@ import javax.servlet.annotation.WebServlet;
  * Created by Stepan on 1/10/2016.
  */
 @WebServlet(name = "FilmBankServlet", urlPatterns = "/*",
-        initParams = {@WebInitParam(name = "UI", value = "com.film.bank.FilmBankUI")
+        initParams = {
+                @WebInitParam(name = "UI", value = "com.film.ui.FilmBankUI")
         })
 public class FilmBankServlet extends VaadinServlet {
     @EJB
-    private FilmDataService userDataService;
+    private FilmDataService filmDataService;
 
-    public FilmDataService getUserDataService() {
-        return userDataService;
+    public FilmDataService getFilmDataService() {
+        return filmDataService;
     }
 }

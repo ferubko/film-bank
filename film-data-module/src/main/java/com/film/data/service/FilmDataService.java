@@ -1,7 +1,7 @@
-package com.film.bank.service;
+package com.film.data.service;
 
-import com.film.bank.dao.FilmDAO;
-import com.film.bank.entity.Film;
+import com.film.data.dao.FilmDAO;
+import com.film.data.entity.Film;
 
 import javax.annotation.security.PermitAll;
 import javax.ejb.EJB;

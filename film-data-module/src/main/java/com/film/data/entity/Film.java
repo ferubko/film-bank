@@ -1,6 +1,4 @@
-package com.film.bank.entity;
-
-import com.vaadin.shared.annotations.NoLayout;
+package com.film.data.entity;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;

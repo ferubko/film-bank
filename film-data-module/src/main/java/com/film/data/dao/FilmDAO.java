@@ -1,6 +1,6 @@
-package com.film.bank.dao;
+package com.film.data.dao;
 
-import com.film.bank.entity.Film;
+import com.film.data.entity.Film;
 
 import javax.ejb.Stateless;
 import javax.ejb.TransactionAttribute;

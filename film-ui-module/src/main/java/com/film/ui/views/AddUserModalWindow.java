@@ -1,4 +1,4 @@
-package com.film.bank.views;
+package com.film.ui.views;
 
 import com.vaadin.ui.*;
 
