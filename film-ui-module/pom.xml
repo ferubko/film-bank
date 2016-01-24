@@ -22,8 +22,8 @@
     <dependencies>
         <dependency>
             <groupId>film-bank</groupId>
-            <artifactId>film-data</artifactId>
-            <version>1.0</version>
+            <artifactId>film-service-data</artifactId>
+            <version>0.0.1</version>
         </dependency>
         <dependency>
             <groupId>com.vaadin</groupId>

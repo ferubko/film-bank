@@ -5,11 +5,11 @@
     <parent>
         <artifactId>film-bank</artifactId>
         <groupId>film-bank</groupId>
-        <version>1.0</version>
+        <version>0.0.1</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>film-data</artifactId>
+    <artifactId>film-service-data</artifactId>
     <version>0.0.1</version>
     <packaging>ejb</packaging>
 
@@ -47,6 +47,11 @@
             <artifactId>javaee-api</artifactId>
             <version>7.0</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-web-api</artifactId>
+            <version>7.0</version>
         </dependency>
         <dependency>
             <groupId>org.postgresql</groupId>
