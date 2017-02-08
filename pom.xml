@@ -9,8 +9,8 @@
     <version>0.0.1</version>
     <modules>
         <module>film-ui-module</module>
-        <module>film-ear-module</module>
         <module>film-service-module</module>
+        <module>film-ear-module</module>
     </modules>
     <packaging>pom</packaging>
 </project>
