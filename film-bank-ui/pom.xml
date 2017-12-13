@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>film-bank</artifactId>
+        <groupId>film-bank</groupId>
+        <version>0.0.1</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>film-bank-ui</artifactId>
+    <version>1.0.0.0</version>
+    <packaging>war</packaging>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>1.8</java.version>
+    </properties>
+
+
+    <!--<dependencies>-->
+    <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.springframework/spring-core &ndash;&gt;-->
+    <!--<dependency>-->
+    <!--<groupId>org.springframework</groupId>-->
+    <!--<artifactId>spring-core</artifactId>-->
+    <!--<version>4.3.7.RELEASE</version>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+    <!--<groupId>com.github.jmnarloch</groupId>-->
+    <!--<artifactId>modelmapper-spring-boot-starter</artifactId>-->
+    <!--<version>1.1.0</version>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+    <!--<groupId>org.springframework.boot</groupId>-->
+    <!--<artifactId>spring-boot-starter-security</artifactId>-->
+    <!--</dependency>-->
+
+    <!--<dependency>-->
+    <!--<groupId>org.springframework.boot</groupId>-->
+    <!--<artifactId>spring-boot-starter-web</artifactId>-->
+    <!--</dependency>-->
+
+    <!--&lt;!&ndash;"@angular/common": "2.0.0-rc.4",&ndash;&gt;-->
+    <!--<dependency>-->
+    <!--<groupId>org.webjars.npm</groupId>-->
+    <!--<artifactId>angular__common</artifactId>-->
+    <!--<version>2.0.0-rc.4</version>-->
+    <!--</dependency>-->
+
+    <!--&lt;!&ndash;"@angular/compiler": "2.0.0-rc.4",&ndash;&gt;-->
+    <!--<dependency>-->
+    <!--<groupId>org.webjars.npm</groupId>-->
+    <!--<artifactId>angular__compiler</artifactId>-->
+    <!--<version>2.0.0-rc.4</version>-->
+    <!--</dependency>-->
+
+
+    <!--&lt;!&ndash;"@angular/core": "2.0.0-rc.4",&ndash;&gt;-->
+    <!--<dependency>-->
+    <!--<groupId>org.webjars.npm</groupId>-->
+    <!--<artifactId>angular__core</artifactId>-->
+    <!--<version>2.0.0-rc.4</version>-->
+    <!--</dependency>-->
+
+    <!--&lt;!&ndash;"@angular/forms": "0.2.0",&ndash;&gt;-->
+    <!--<dependency>-->
+    <!--<groupId>org.webjars.npm</groupId>-->
+    <!--<artifactId>angular__forms</artifactId>-->
+    <!--<version>0.2.0</version>-->
+    <!--</dependency>-->
+
+    <!--&lt;!&ndash;"@angular/http": "2.0.0-rc.4",&ndash;&gt;-->
+    <!--<dependency>-->
+    <!--<groupId>org.webjars.npm</groupId>-->
+    <!--<artifactId>angular__http</artifactId>-->
+    <!--<version>2.0.0-rc.4</version>-->
+    <!--</dependency>-->
+
+    <!--&lt;!&ndash;"@angular/platform-browser": "2.0.0-rc.4",&ndash;&gt;-->
+    <!--<dependency>-->
+    <!--<groupId>org.webjars.npm</groupId>-->
+    <!--<artifactId>angular__platform-browser</artifactId>-->
+    <!--<version>2.0.0-rc.4</version>-->
+    <!--</dependency>-->
+
+    <!--&lt;!&ndash;"@angular/platform-browser-dynamic": "2.0.0-rc.4",&ndash;&gt;-->
+    <!--<dependency>-->
+    <!--<groupId>org.webjars.npm</groupId>-->
+    <!--<artifactId>angular__platform-browser-dynamic</artifactId>-->
+    <!--<version>2.0.0-rc.4</version>-->
+    <!--</dependency>-->
+
+    <!--&lt;!&ndash;"@angular/router": "3.0.0-beta.1",&ndash;&gt;-->
+    <!--<dependency>-->
+    <!--<groupId>org.webjars.npm</groupId>-->
+    <!--<artifactId>angular__router</artifactId>-->
+    <!--<version>3.0.0-beta.2</version>-->
+    <!--</dependency>-->
+
+    <!--&lt;!&ndash;"@angular/router-deprecated": "2.0.0-rc.2",&ndash;&gt;-->
+    <!--<dependency>-->
+    <!--<groupId>org.webjars.npm</groupId>-->
+    <!--<artifactId>angular__router-deprecated</artifactId>-->
+    <!--<version>2.0.0-rc.2</version>-->
+    <!--</dependency>-->
+
+    <!--&lt;!&ndash;"@angular/upgrade": "2.0.0-rc.4",&ndash;&gt;-->
+    <!--<dependency>-->
+    <!--<groupId>org.webjars.npm</groupId>-->
+    <!--<artifactId>angular__upgrade</artifactId>-->
+    <!--<version>2.0.0-rc.4</version>-->
+    <!--</dependency>-->
+
+    <!--&lt;!&ndash;"angular2-in-memory-web-api": "0.0.14",&ndash;&gt;-->
+    <!--<dependency>-->
+    <!--<groupId>org.webjars.npm</groupId>-->
+    <!--<artifactId>angular2-in-memory-web-api</artifactId>-->
+    <!--<version>0.0.14</version>-->
+    <!--</dependency>-->
+
+    <!--&lt;!&ndash;angular/material2&ndash;&gt;-->
+    <!--<dependency>-->
+    <!--<groupId>org.webjars.npm</groupId>-->
+    <!--<artifactId>angular2-material__core</artifactId>-->
+    <!--<version>2.0.0-alpha.6-2</version>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+    <!--<groupId>org.webjars.npm</groupId>-->
+    <!--<artifactId>angular2-material__button</artifactId>-->
+    <!--<version>2.0.0-alpha.6-2</version>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+    <!--<groupId>org.webjars.npm</groupId>-->
+    <!--<artifactId>angular2-material__icon</artifactId>-->
+    <!--<version>2.0.0-alpha.6-2</version>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+    <!--<groupId>org.webjars.npm</groupId>-->
+    <!--<artifactId>angular2-material__checkbox</artifactId>-->
+    <!--<version>2.0.0-alpha.6-2</version>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+    <!--<groupId>org.webjars.npm</groupId>-->
+    <!--<artifactId>angular2-material__sidenav</artifactId>-->
+    <!--<version>2.0.0-alpha.6-2</version>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+    <!--<groupId>org.webjars.npm</groupId>-->
+    <!--<artifactId>angular2-material__card</artifactId>-->
+    <!--<version>2.0.0-alpha.6-2</version>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+    <!--<groupId>org.webjars.npm</groupId>-->
+    <!--<artifactId>angular2-material__list</artifactId>-->
+    <!--<version>2.0.0-alpha.6-2</version>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+    <!--<groupId>org.webjars.npm</groupId>-->
+    <!--<artifactId>angular2-material__toolbar</artifactId>-->
+    <!--<version>2.0.0-alpha.6-2</version>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+    <!--<groupId>org.webjars.npm</groupId>-->
+    <!--<artifactId>angular2-material__grid-list</artifactId>-->
+    <!--<version>2.0.0-alpha.6-2</version>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+    <!--<groupId>org.webjars.npm</groupId>-->
+    <!--<artifactId>angular2-material__tabs</artifactId>-->
+    <!--<version>2.0.0-alpha.6-2</version>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+    <!--<groupId>org.webjars.npm</groupId>-->
+    <!--<artifactId>angular2-material__progress-bar</artifactId>-->
+    <!--<version>2.0.0-alpha.6-2</version>-->
+    <!--</dependency>-->
+
+    <!--<dependency>-->
+    <!--<groupId>org.webjars.npm</groupId>-->
+    <!--<artifactId>es6-promise</artifactId>-->
+    <!--<version>3.0.2</version>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+    <!--<groupId>org.webjars.npm</groupId>-->
+    <!--<artifactId>es6-shim</artifactId>-->
+    <!--<version>0.35.1</version>-->
+    <!--</dependency>-->
+    <!--&lt;!&ndash;"reflect-metadata": "^0.1.3",&ndash;&gt;-->
+    <!--<dependency>-->
+    <!--<groupId>org.webjars.npm</groupId>-->
+    <!--<artifactId>reflect-metadata</artifactId>-->
+    <!--<version>0.1.3</version>-->
+    <!--</dependency>-->
+    <!--&lt;!&ndash;"core-js": "^2.4.0",&ndash;&gt;-->
+    <!--<dependency>-->
+    <!--<groupId>org.webjars.npm</groupId>-->
+    <!--<artifactId>core-js</artifactId>-->
+    <!--<version>2.4.0</version>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+    <!--<groupId>org.webjars.npm</groupId>-->
+    <!--<artifactId>rxjs</artifactId>-->
+    <!--<version>5.0.0-beta.7</version>-->
+    <!--</dependency>-->
+    <!--&lt;!&ndash;"zone.js": "^0.6.12",&ndash;&gt;-->
+    <!--<dependency>-->
+    <!--<groupId>org.webjars.npm</groupId>-->
+    <!--<artifactId>zone.js</artifactId>-->
+    <!--<version>0.6.12</version>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+    <!--<groupId>org.webjars.npm</groupId>-->
+    <!--<artifactId>systemjs</artifactId>-->
+    <!--<version>0.19.27</version>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+    <!--<groupId>org.webjars</groupId>-->
+    <!--<artifactId>bootstrap</artifactId>-->
+    <!--<version>3.3.6</version>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+    <!--<groupId>org.webjars</groupId>-->
+    <!--<artifactId>jquery</artifactId>-->
+    <!--<version>2.2.3</version>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+    <!--<groupId>org.webjars.bower</groupId>-->
+    <!--<artifactId>bootstrap-material-design</artifactId>-->
+    <!--<version>0.5.10</version>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+    <!--<groupId>org.webjars.npm</groupId>-->
+    <!--<artifactId>jquery-ui</artifactId>-->
+    <!--<version>1.10.5</version>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+    <!--<groupId>joda-time</groupId>-->
+    <!--<artifactId>joda-time</artifactId>-->
+    <!--<version>2.8.2</version>-->
+    <!--</dependency>-->
+    <!--</dependencies>-->
+
+    <!--<build>-->
+    <!--<plugins>-->
+    <!--<plugin>-->
+    <!--<groupId>org.springframework.boot</groupId>-->
+    <!--<artifactId>spring-boot-maven-plugin</artifactId>-->
+    <!--<dependencies>-->
+    <!--<dependency>-->
+    <!--<groupId>org.springframework</groupId>-->
+    <!--<artifactId>springloaded</artifactId>-->
+    <!--<version>1.2.3.RELEASE</version>-->
+    <!--</dependency>-->
+    <!--</dependencies>-->
+    <!--</plugin>-->
+    <!--</plugins>-->
+    <!--</build>-->
+
+</project>
