@@ -8,6 +8,7 @@ import java.util.Date;
  * Created by stepanferubko
  */
 @Entity
+@Table(name = "film")
 public class Film {
     @Id
     @GeneratedValue

@@ -1,12 +1,12 @@
 package com.svf.core.repositories;
 
 import com.svf.core.entity.Film;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
 /**
- * Created by stepanferubko
+ * @author Stepan Ferubko
  */
-public interface FilmRepository extends JpaRepository<Film, Long>, JpaSpecificationExecutor<Film> {
-//    List<Film> findByDate(String date);
+@Repository
+public interface FilmRepository extends CrudRepository<Film, Long> {
 }
