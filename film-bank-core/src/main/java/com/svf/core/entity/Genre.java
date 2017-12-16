@@ -8,13 +8,13 @@ import javax.validation.constraints.NotNull;
 /**
  * Created by stepanferubko
  */
-//@Entity
+@Entity
 public class Genre {
-//    @Id
-//    @GeneratedValue
+    @Id
+    @GeneratedValue
     private Long id;
-//    @NotNull
-//    @Enumerated(EnumType.STRING)
+    @NotNull
+    @Enumerated(EnumType.STRING)
     public GenreType genreType;
 
     public Genre() {

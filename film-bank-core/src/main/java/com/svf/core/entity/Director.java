@@ -1,16 +1,21 @@
 package com.svf.core.entity;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
 /**
  * Created by stepanferubko
  */
-//@Entity
+@Entity
 public class Director {
-    //    @Id
-//    @GeneratedValue
+    @Id
+    @GeneratedValue
     private Long id;
-    //    @Column(nullable = false)
+    @Column(nullable = false)
     private String firstName;
-    //    @Column(nullable = false)
+    @Column(nullable = false)
     private String secondName;
 
     public Long getId() {

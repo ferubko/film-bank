@@ -1,20 +1,21 @@
 package com.svf.core.entity;
 
+import javax.persistence.*;
 import java.util.Date;
 
 /**
  * Created by stepanferubko
  */
-//@Entity
+@Entity
 public class Actor {
-    //    @Id
-//    @GeneratedValue
+    @Id
+    @GeneratedValue
     private Long id;
-    //    @Column(nullable = false)
+    @Column(nullable = false)
     private String firstName;
-    //    @Column(nullable = false)
+    @Column(nullable = false)
     private String secondName;
-    //    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.TIMESTAMP)
     private Date birthday;
 
     public Long getId() {
@@ -48,14 +49,6 @@ public class Actor {
     public void setBirthday(Date birthday) {
         this.birthday = birthday;
     }
-
-//    public Set<Film> getFilms() {
-//        return films;
-//    }
-//
-//    public void setFilms(Set<Film> films) {
-//        this.films = films;
-//    }
 
     @Override
     public boolean equals(Object o) {
