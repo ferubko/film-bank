@@ -52,7 +52,6 @@ public class Director {
         if (id != null ? !id.equals(director.id) : director.id != null) return false;
         if (firstName != null ? !firstName.equals(director.firstName) : director.firstName != null) return false;
         return secondName != null ? secondName.equals(director.secondName) : director.secondName == null;
-
     }
 
     @Override

@@ -61,7 +61,6 @@ public class Actor {
         if (firstName != null ? !firstName.equals(actor.firstName) : actor.firstName != null) return false;
         if (secondName != null ? !secondName.equals(actor.secondName) : actor.secondName != null) return false;
         return birthday != null ? birthday.equals(actor.birthday) : actor.birthday == null;
-
     }
 
     @Override

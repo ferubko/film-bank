@@ -23,15 +23,13 @@ public class Film {
     @ManyToOne(targetEntity = Director.class)
     @JoinColumn(nullable = false)
     private Director director;
-
     @ManyToOne(targetEntity = Genre.class)
     @JoinColumn(nullable = false)
     private Genre genre;
-
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "film_actor",
-            joinColumns = { @JoinColumn(name = "film_id") },
-            inverseJoinColumns = { @JoinColumn(name = "actor_id") })
+            joinColumns = {@JoinColumn(name = "film_id")},
+            inverseJoinColumns = {@JoinColumn(name = "actor_id")})
     private Set<Actor> actors = new HashSet<>();
 
     public Long getId() {
