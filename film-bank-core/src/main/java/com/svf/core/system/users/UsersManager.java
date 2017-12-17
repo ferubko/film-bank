@@ -1,7 +1,7 @@
 package com.svf.core.system.users;
 
-import org.springframework.security.core.userdetails.*;
 import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.provisioning.UserDetailsManager;
 
 import java.util.List;
@@ -11,6 +11,7 @@ import java.util.concurrent.locks.ReentrantLock;
 /**
  * Created by stepanferubko
  */
+//@Component
 public class UsersManager {
     private final Lock usersLock;
     private UserDetailsManager userDetailsManager;

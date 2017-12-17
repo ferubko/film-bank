@@ -1,6 +1,5 @@
 package com.svf.core.system;
 
-import javax.jws.soap.SOAPBinding;
 import java.io.Serializable;
 import java.util.Arrays;
 
@@ -66,8 +65,9 @@ public class User implements Serializable {
                 ", authorities=" + Arrays.toString(authorities) +
                 '}';
     }
-    public static User newUser(String login,String password, String[] auth){
-        User user=new User();
+
+    public static User newUser(String login, String password, String[] auth) {
+        User user = new User();
         user.setLogin(login);
         user.setPassword(password);
         user.setAuthorities(auth);
